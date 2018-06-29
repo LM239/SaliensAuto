@@ -16,7 +16,7 @@ public class TextUtils {
         else planetData=p;
         int[] difficuties = planetData.getDifficulties();
         String s = "";
-        for(int i=1;i<=4;i++){
+        for(int i=1;i<=3;i++){
             s+=Main.addDiffColor(difficuties[i]+" "+Main.getDiffText(i),i)+", ";
         }
         return s.substring(0,s.length()-2);

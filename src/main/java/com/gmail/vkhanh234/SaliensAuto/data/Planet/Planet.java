@@ -35,8 +35,9 @@ public class Planet{
         int[] result = new int[5];
         for(Zone zone:zones){
             if(zone.captured || zone.capture_progress>=Main.MAX_CAPTURE_RATE) continue;
-            if(zone.type==4) result[4]++;
-            else result[zone.difficulty]++;
+//            if(zone.type==4) result[4]++;
+//            else result[zone.difficulty]++;
+            result[zone.difficulty]++;
         }
         return result;
     }

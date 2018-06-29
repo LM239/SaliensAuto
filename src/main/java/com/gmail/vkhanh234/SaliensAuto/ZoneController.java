@@ -76,7 +76,7 @@ public class ZoneController {
             if(zone.captured || zone.capture_progress>=maxProgress) continue;
             if(Main.planetSearchMode==2 && focusZone!=null && String.valueOf(zone.zone_position).equals(focusZone)) return zone;
             int diff = zone.difficulty;
-            if(zone.type==4) diff=4;
+//            if(zone.type==4) diff=4;
             if(maxDiff<diff){
                 maxDiff=diff;
                 res = zone;

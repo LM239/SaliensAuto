@@ -16,7 +16,7 @@ public class MostXpMode extends SearchMode {
             int[] difficuties = planetData.getDifficulties();
             Main.debug("> Planet "+TextUtils.getPlanetsDetailsText(planetData));
             Main.debug("\tZones: "+TextUtils.getZonesText(planetData));
-            for(int i=4;i>=1;i--){
+            for(int i=3;i>=1;i--){
                 Main.totalDiff[i]+=difficuties[i];
                 if(difficuties[i]>0 && i>Main.maxDiff) Main.maxDiff=i;
                 if(max[i]<difficuties[i]){

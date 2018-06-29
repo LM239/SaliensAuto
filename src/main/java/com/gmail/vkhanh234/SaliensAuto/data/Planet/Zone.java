@@ -11,7 +11,7 @@ public class Zone {
     public String gameid;
 
     public String getDifficultyText(){
-        if(type==4) return Main.addDiffColor(Main.getDiffText(4),4);
+//        if(type==4) return Main.addDiffColor(Main.getDiffText(4),4);
         return Main.addDiffColor(Main.getDiffText(difficulty),difficulty);
     }
 
